@@ -1,0 +1,34 @@
+name: 更新简历到服务器
+
+on:
+  push:
+    # push代码的时候哪个分支会受到影响、这里是main主分克
+    branches:
+      - main
+      
+# 推送之后执行一系列的任务
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      # 获取代码
+      - name: 迁出代码
+        # 使用action库action/checkout获取代码
+        uses: actions/checkout@main
+
+      # 上传到腾讯云
+      - name: 发布到腾讯云
+        uses: easingthemes/ssh-deploy@main
+        env:
+          # 私钥
+          SSH_PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
+          # SCP参数
+          ARGS: "-rlgoDzvc -i --delete"
+          # 源目录
+          SOURCE: 'dist/'
+          # 服务器ip
+          REMOTE_HOST: ${{secrets.REMOTET_XHOST}}
+          # 用户
+          REMOTE_USER: 'root'
+          # 目标地址
+          TARGET: '/data/www/resume'
