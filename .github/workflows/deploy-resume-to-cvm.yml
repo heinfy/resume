@@ -16,6 +16,20 @@ jobs:
         # 使用action库action/checkout获取代码
         uses: actions/checkout@main
 
+        # 安装 nodejs
+      - name: 安装 nodejs
+        uses: actions/setup-node@v2
+        with:
+          node-version: "146.x"
+
+      # 安装依赖
+      - name: 安装依赖
+        run: npm install
+
+      # 构建 dist
+      - name: 构建
+        run: npm run build
+
       # 上传到腾讯云
       - name: 发布到腾讯云
         uses: easingthemes/ssh-deploy@main
