@@ -20,7 +20,7 @@ jobs:
       - name: 安装 nodejs
         uses: actions/setup-node@v2
         with:
-          node-version: "146.x"
+          node-version: "16.x"
 
       # 安装依赖
       - name: 安装依赖
