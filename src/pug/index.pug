@@ -86,13 +86,18 @@ html(lang='zh')
                         .flex-grow-1.mb-3
                             .subheading 就读时间： 
                                 span.text-primary 2013.9-2017.6
+                    hr
                     .social-icons.pt-3
+                        span.subheading 我的主页：
                         a.social-icon(href='https://heinfy.top/')(title='https://heinfy.top/')(target="stumbleupon")
                             i.fab.fa-internet-explorer
+                        span.subheading 博客：
                         a.social-icon(href='https://blog.heinfy.top/')(title='https://blog.heinfy.top/')(target="microblog")
                             i.fab.fa-microblog
+                        span.subheading GitHub：
                         a.social-icon(href='https://github.com/heinfy')(title='https://github.com/heinfy')(target="github")
                             i.fab.fa-github
+                        span.subheading 我的简历：
                         a.social-icon(href='https://www.qmjianli.com/cvs/22384M52GIF5P56')(title='我的简历')(target="download")
                             i.fab.fa-markdown
                             //- i.fab.fa-octopus-deploy
@@ -100,8 +105,9 @@ html(lang='zh')
                             //- i.fab.fa-connectdevelop
                             //- i.fab.fa-pinterest
                             //- i.fab.fa-face-smile-beam
+                    hr
                     p.lead.pt-5
-                        | 老骥伏枥，志在千里；烈士暮年，壮心不已。—— 曹操《龟虽寿》
+                        span.text-primary.subheading 😊 Welcome to my resume page
             hr.m-0
 
 
@@ -136,15 +142,19 @@ html(lang='zh')
                         li.mb-1
                             span.fa-li
                                 i.fas.fa-check
-                            | 有扎实的前端技术基础，包括HTML(5)/CSS(3)/Javascript/Typescript等；
+                            | 熟练使用 HTML、CSS 及 JavaScript 等 Web 前端技术；
                         li.mb-1
                             span.fa-li
                                 i.fas.fa-check
-                            | 熟练使用 React、Vue，理解 MVVM，有大型单页 Web 应用和移动端开发经验；
+                            | 掌握前端主流框架，包括 React、Vue，并理解相关原理；
                         li.mb-1
                             span.fa-li
                                 i.fas.fa-check
-                            | 熟悉前端工程化，了解前端模块化开发；
+                            | 熟悉小程序开发整体流程，熟练掌握小程序生态工具的运营，熟练开发小程序项目；
+                        li.mb-1
+                            span.fa-li
+                                i.fas.fa-check
+                            | 熟悉 TypeScript 的语法和特性；
                         li.mb-1
                             span.fa-li
                                 i.fas.fa-check
@@ -152,11 +162,15 @@ html(lang='zh')
                         li.mb-1
                             span.fa-li
                                 i.fas.fa-check
-                            | 熟练使用 Git 等工具，具备良好的编码风格和习惯；
+                            | 熟悉前端工程化，模块化开发，能够基于 webpack 等工具对项目进行优化；
                         li.mb-1
                             span.fa-li
                                 i.fas.fa-check
-                            | 熟悉 NodeJS 生态，熟悉 Express\Koa 开发部署。
+                            | 对 NodeJS 服务端生态有一定了解，能够基于 Express\Koa 等框架进行服务端开发；
+                        li.mb-1
+                            span.fa-li
+                                i.fas.fa-check
+                            | 熟练使用 Git 等工具，具备良好的编码风格和习惯。
             hr.m-0
 
 
@@ -170,7 +184,11 @@ html(lang='zh')
                             h3.mb-0 web 前端工程师
                             .subheading.mb-3 完美世界
                             p
-                                | 负责 CRM 招生系统以及教务系统开发工作；以及 ToB、ToC 在线学习平台（Nuxt.js）开发，包括 PC、H5、小程序端。
+                                | 1、参与公司内部 CRM 系统以及教务系统开发工作，撰写相关的技术文档；
+                            p
+                                | 2、参与完美世界教育 ToB、ToC 在线学习平台（PC、小程序端）开发工作，从0到1实现所有功能；
+                            p
+                                | 3、搭建前端系统的测试环境，保证系统在测试环境平稳运行。
                         .flex-shrink-0
                             span.text-primary 2021.02 - 2023.12
 
@@ -179,7 +197,9 @@ html(lang='zh')
                             h3.mb-0 web 前端工程师
                             .subheading.mb-3 学霸君
                             p
-                                | 负责优学课堂 h5 以及活动页、广告加盟以及运营平台的开发工作；负责资料分享小程序和公众号开发。
+                                | 1、参与优学课堂的需求分析，负责活动页、广告加盟以及运营平台的开发工作；
+                            p
+                                | 2、依据业务需求，实现资料分享小程序、公众号相关功能的开发，输出稳定、可靠的前端代码。
                         .flex-shrink-0
                             span.text-primary 2020.05 - 2021.01
 
@@ -188,7 +208,7 @@ html(lang='zh')
                             h3.mb-0 前端开发
                             .subheading.mb-3 中科软科技有限公司
                             p
-                                | 负责 App 小应用、H5页面以及后台系统的开发工作。
+                                | 1、参与 APP 的开发工作，实现相关的功能模块，并持续优化；以及参与其他前端开发工作。
                         .flex-shrink-0
                             span.text-primary 2018.09 - 2020.05
             hr.m-0
@@ -201,13 +221,13 @@ html(lang='zh')
                     .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
                         .flex-grow-1
                             h3.mb-0  CRM 招生系统
-                            .subheading.text-lowercase.mb-2 技术栈：react hooks、ts、antd
-                            div.mb-2 项目描述：完美世界职业教育招生系统，业务内容包括线索客户、合同报名、财务审核、绩效管理、信息平台、BI统计等。
+                            .subheading.text-lowercase.mb-2 技术栈：webpack、react、typescript、ant-design
+                            div.mb-2 项目描述：完美世界职业教育系统是完美世界教育为内部人员提供的在线业务平台。实现线下流程线上化，包括一整套招生流程，从线索到客户，报名审批，以及合同签约、财务审核、销售绩效管理、信息共享平台、BI统计报表等。
                             div.mb-1 我的工作：
-                            p.mb-1.px-3 1、实现基于 RBAC 权限控制；
-                            p.mb-1.px-3 2、将上传的资源迁移的对象存储，添加鉴权访问资源；
-                            p.mb-1.px-3 3、开发完成招生、报名、绩效、BI统计等功能，并对业务组件、工具类进行优化封装；
-                            p.mb-1.px-3 4、完成系统的构建优化，将静态资源上传到百度云 BOS。
+                            p.mb-1.px-3 1、负责功能权限的开发，实现基于 RBAC 权限控制，对路由、按钮实现权限控制；
+                            p.mb-1.px-3 2、基于百度云对象存储和 CDN 实现文件的上传功能，添加鉴权访问资源以及图片压缩访问；
+                            p.mb-1.px-3 3、者报名审批，财务审核流程的前端实现；实现了审批发起，审核、驳回等相关功能，以及相应组件的优化工作；
+                            p.mb-1.px-3 4、完成系统的打包优化，通过 dll 分离第三方类库，将 css 等资源在打包过程中上传到对象存储，并在 HTML 自动添加 CDN 引用。
                         .flex-shrink-0
                             span.text-primary 2021.02 - 2023.12
                     
@@ -215,15 +235,16 @@ html(lang='zh')
                         .flex-grow-1
                             h3.mb-0 像素种子慕课网
                             .subheading.text-lowercase.mb-2 技术栈：vuejs、nuxtjs、小程序、view design
-                            div.mb-2 像素种子慕课网
+                            div.mb-2
                                 a.text-primary(href="https://www.pixseed.com/")(target="view_window") 像素种子慕课网
-                                span 是完美世界教育 ToC 线上课平台，涵盖影视、游戏行业等课程。具体业务包括信息采集、在线学习、个人中心、课程问答、订单支付等功能。像素种子是完美世界控股集团业务板块之一，
+                                span 是完美世界教育 ToC 线上课平台（PC端，小程序端），对外提供涵盖影视、游戏行业等课程在线播放。用户可以在平台下单购课，直接在平台观看课程。具体业务包括信问卷采集、在线学习、个人中心、课程问答、订单支付等功能。
                             div.mb-1 我的工作：
-                            p.mb-1.px-3 1、基于 form making 二次开发，完成公司内部的表单配置；
-                            p.mb-1.px-3 2、基于 cyberplayer 完成在线播放页，包含课程学习、章节联连播，资料下载等功能；
-                            p.mb-1.px-3 3、完成个人中心多个模块，包括课程、订单、优惠券、反馈、资料编辑等；
-                            p.mb-1.px-3 4、完成课程问答模块，包括在播放器页和课程详情页添加问答 Tab 模块；
-                            p.mb-1.px-3 5、完成购买课程订单支付页面。
+                            p.mb-1.px-3 1、实现问卷模块，基于 form-making 二次开发，将整个功能整合到 TOC 平台，并添加定制化的后端接口交互功能；
+                            p.mb-1.px-3 2、负责整个系统的视频播放器功能开发，运营端负责课程视频上传到对象存储，以及审核等功能；用户端引入 cyberplayer 播放器，对课程进行逐章节连续播放；根据业务需求，对播放中的课程进行暂停、提供弹窗问答；以及限时试看等功能开发；
+                            p.mb-1.px-3 3、对接微信公众平台订阅消息，实现开课提醒等方面的订阅功能；
+                            p.mb-1.px-3 4、负责个人中心、订单中心以及营销模块等的功能实现，包括头像上传裁剪、优惠券领取核销等功能；
+                            p.mb-1.px-3 5、负责课程问答模块的功能实现，实现了评论、回复、点赞、举报等功能；
+                            p.mb-1.px-3 6、完成购买课程订单支付页面。
                         .flex-shrink-0
                             span.text-primary 2021.09 - 2023.12
                     
@@ -231,11 +252,12 @@ html(lang='zh')
                         .flex-grow-1
                             h3.mb-0 教务系统
                             .subheading.text-lowercase.mb-2 技术栈：vuejs, iview
-                            div.mb-2 项目描述：：该系统为完美世界教育下的教务教学管理系统，涵盖了课程管理、班级管理、座位表、讲师排期表，设备管理等功能。
+                            div.mb-2 项目描述：该系统为完美世界教育下的教务管理系统，服务于内部人员，主要用于管理线下课程相关的的各种流程，涵盖了课程管理、班级管理、座位表、讲师排期表，设备管理等功能。
                             div.mb-1 我的工作：
-                            p.mb-1.px-3 1、完成课程、班级等模块的开发工作，以及后续的功能迭代；
-                            p.mb-1.px-3 2、完成座位表开发，包括坐位方向调整，位置拖拽交换，座位表打印PDF等功能；
-                            p.mb-1.px-3 3、完成讲师排期表、设备管理模块开发，包括自定义单元格等功能。
+                            p.mb-1.px-3 1、负责课程、班级、设备等模块的开发工作，包括业务功能迭代和组件结构的优化工作；
+                            p.mb-1.px-3 2、负责预约模块的开发工作，通过自定义日历组件批量选择日期；
+                            p.mb-1.px-3 3、负责座位表模块的开发，包括坐位方向调整，位置拖拽交换，座位表打印PDF等功能；
+                            p.mb-1.px-3 4、负责讲师排期表的开发，从0实现自定义表格，以及对单元格上的绑定的一些列事件进行优化；
                         .flex-shrink-0
                             span.text-primary 2021.05.10 - 2023.12
                           
@@ -258,12 +280,11 @@ html(lang='zh')
                             .subheading.text-lowercase.mb-2 技术栈：vue、hybrid app、jquery
                             div.mb-2 项目描述：该系统为面向 ToB 业务，为保险业务员开发的 App，包括预约、详情、评价、内容介绍等功能。
                             div.mb-1 我的工作：
-                            p.mb-1.px-3 1、 使用 postcss 相关插件完成移动端的适配；
-                            p.mb-1.px-3 2、根据业务需求完成公共组件，包括日历组件、证件上传组件等；
-                            p.mb-1.px-3 3、通过 vue-router 的钩子判断页面返回以及跳转，并且在该页面销毁时将数据保存在 vuex 中；
-                            p.mb-1.px-3 4、完成 js 和原生交互，实现原生数据获取，以及调取原生的相机、地图、电话等组件；
-                            p.mb-1.px-3 5、添加页面埋点，统计访问数据；
-                            p.mb-1.px-3 6、配合产品完成页面功能改进，提升用户体检。
+                            p.mb-1.px-3 1、完成移动端的适配，根据业务需求完成日历组件、证件上传组件等；
+                            p.mb-1.px-3 2、通过 vue-router 的钩子判断页面返回以及跳转，并且在该页面销毁时将数据保存在 vuex 中；
+                            p.mb-1.px-3 3、负者 js 和原生的联调，实现了双端的数据交互和回调，以及调取原生的相机、地图、电话等原生api实现具体业务功能；
+                            p.mb-1.px-3 4、负责页面埋点功能开发，根据业务需求设置不同埋点，统计访问数据；
+                            p.mb-1.px-3 5、配合产品完成页面功能改进，提升用户体检。
                         .flex-shrink-0
                             span.text-primary 2018.09 - 2021.05
 
