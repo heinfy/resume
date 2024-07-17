@@ -74,7 +74,7 @@ html(lang='zh')
                                 span.text-primary 河北
                         .flex-grow-1.mb-3
                             .subheading 工作年限： 
-                                span.text-primary 5年
+                                span.text-primary 6年
 
                     .d-flex.flex-column.flex-md-row.justify-content-between
                         .flex-grow-1.mb-3
@@ -82,7 +82,7 @@ html(lang='zh')
                                 span.text-primary 唐山学院
                         .flex-grow-1.mb-3
                             .subheading 学历： 
-                                span.text-primary 本科
+                                span.text-primary 统招本科
                         .flex-grow-1.mb-3
                             .subheading 就读时间： 
                                 span.text-primary 2013.9-2017.6
@@ -142,7 +142,7 @@ html(lang='zh')
                         li.mb-1
                             span.fa-li
                                 i.fas.fa-check
-                            | 熟练使用 HTML、CSS 及 JavaScript 等 Web 前端技术；
+                            | 熟练使用 HTML、CSS 及 JavaScript 等 Web 前端技术，熟悉 TypeScript 的语法和特性；
                         li.mb-1
                             span.fa-li
                                 i.fas.fa-check
@@ -150,11 +150,19 @@ html(lang='zh')
                         li.mb-1
                             span.fa-li
                                 i.fas.fa-check
+                            | 掌握混合 App 开发，熟悉桥方法制定，对 H5 和 Native 交互有一定经验；
+                        li.mb-1
+                            span.fa-li
+                                i.fas.fa-check
+                            |了解 HarmonyOS，能够使用 ArkUI、ArkTs 开发鸿蒙应用；
+                        li.mb-1
+                            span.fa-li
+                                i.fas.fa-check
                             | 熟悉小程序开发整体流程，熟练掌握小程序生态工具的运营，熟练开发小程序项目；
                         li.mb-1
                             span.fa-li
                                 i.fas.fa-check
-                            | 熟悉 TypeScript 的语法和特性；
+                            | 熟悉前端工程化，模块化开发，能够基于 webpack、vite 等工具对项目进行优化；
                         li.mb-1
                             span.fa-li
                                 i.fas.fa-check
@@ -162,15 +170,7 @@ html(lang='zh')
                         li.mb-1
                             span.fa-li
                                 i.fas.fa-check
-                            | 熟悉前端工程化，模块化开发，能够基于 webpack 等工具对项目进行优化；
-                        li.mb-1
-                            span.fa-li
-                                i.fas.fa-check
                             | 对 NodeJS 服务端生态有一定了解，能够基于 Express\Koa 等框架进行服务端开发；
-                        li.mb-1
-                            span.fa-li
-                                i.fas.fa-check
-                            | 熟练使用 Git 等工具，具备良好的编码风格和习惯。
             hr.m-0
 
 
@@ -178,6 +178,17 @@ html(lang='zh')
             section#experience.resume-section
                 .resume-section-content
                     h2.mb-5 工作经历
+
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                        .flex-grow-1
+                            h3.mb-0 前端/鸿蒙开发工程师
+                            .subheading.mb-3 远程兼职
+                            p
+                                | 1、参与鸿蒙App的方案制定，制定桥方法；
+                            p
+                                | 2、参与前端技术方案落地，搭建项目框架，开发业务功能模块。
+                        .flex-shrink-0
+                            span.text-primary 2024.03 - 2023.07
 
                     .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
                         .flex-grow-1
@@ -220,6 +231,18 @@ html(lang='zh')
 
                     .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
                         .flex-grow-1
+                            h3.mb-0  鸿蒙 APP
+                            .subheading.text-lowercase.mb-2 技术栈：vite、react、typescript、antd-mobile
+                            div.mb-2 项目描述：该项目是基于 HarmonyOS 实现的混合 App 项目，开发任务就是将原来安卓 App 上的功能迁移到鸿蒙生态上；该项目前端基于 vite、react 实现，并且添加 ts 以规范类型，Native 端采用 ArkTS 和 ArkUI 来完成鸿蒙开发。
+                            div.mb-1 我的工作：
+                            p.mb-1.px-3 1、基于 pnpm 实现单仓多项，采用 husky eslint 等工具规范前端代码；
+                            p.mb-1.px-3 2、制定桥方法，解决了Native 和 H5 之间的通信；封装 request 请求等方法；
+                            p.mb-1.px-3 3、完成设置，预约，班级等业务模块开发，提取周历、Load 等前端公共组件。
+                        .flex-shrink-0
+                            span.text-primary 2024.03 - 2024.07
+                    
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                        .flex-grow-1
                             h3.mb-0  CRM 招生系统
                             .subheading.text-lowercase.mb-2 技术栈：webpack、react、typescript、ant-design
                             div.mb-2 项目描述：完美世界职业教育系统是完美世界教育为内部人员提供的在线业务平台。实现线下流程线上化，包括一整套招生流程，从线索到客户，报名审批，以及合同签约、财务审核、销售绩效管理、信息共享平台、BI统计报表等。
@@ -242,9 +265,8 @@ html(lang='zh')
                             p.mb-1.px-3 1、实现问卷模块，基于 form-making 二次开发，将整个功能整合到 TOC 平台，并添加定制化的后端接口交互功能；
                             p.mb-1.px-3 2、负责整个系统的视频播放器功能开发，运营端负责课程视频上传到对象存储，以及审核等功能；用户端引入 cyberplayer 播放器，对课程进行逐章节连续播放；根据业务需求，对播放中的课程进行暂停、提供弹窗问答；以及限时试看等功能开发；
                             p.mb-1.px-3 3、对接微信公众平台订阅消息，实现开课提醒等方面的订阅功能；
-                            p.mb-1.px-3 4、负责个人中心、订单中心以及营销模块等的功能实现，包括头像上传裁剪、优惠券领取核销等功能；
+                            p.mb-1.px-3 4、负责购课支付、个人中心、订单中心以及营销模块等的功能实现，包括头像上传裁剪、优惠券领取核销等功能；
                             p.mb-1.px-3 5、负责课程问答模块的功能实现，实现了评论、回复、点赞、举报等功能；
-                            p.mb-1.px-3 6、完成购买课程订单支付页面。
                         .flex-shrink-0
                             span.text-primary 2021.09 - 2023.12
                     
@@ -281,8 +303,8 @@ html(lang='zh')
                             div.mb-2 项目描述：该系统为面向 ToB 业务，为保险业务员开发的 App，包括预约、详情、评价、内容介绍等功能。
                             div.mb-1 我的工作：
                             p.mb-1.px-3 1、完成移动端的适配，根据业务需求完成日历组件、证件上传组件等；
-                            p.mb-1.px-3 2、通过 vue-router 的钩子判断页面返回以及跳转，并且在该页面销毁时将数据保存在 vuex 中；
-                            p.mb-1.px-3 3、负者 js 和原生的联调，实现了双端的数据交互和回调，以及调取原生的相机、地图、电话等原生api实现具体业务功能；
+                            p.mb-1.px-3 2、在 VueRouter 钩子函数进行业务判断，根据业务需求跳转不同页面；
+                            p.mb-1.px-3 3、实现双端交互，完成了原生的相机、地图、电话等原生api实现具体业务功能；
                             p.mb-1.px-3 4、负责页面埋点功能开发，根据业务需求设置不同埋点，统计访问数据；
                             p.mb-1.px-3 5、配合产品完成页面功能改进，提升用户体检。
                         .flex-shrink-0
