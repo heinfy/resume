@@ -1,48 +1,46 @@
-name: 更新简历到服务器
+name: Deploy to Tencent Cloud
 
 on:
   push:
-    # push代码的时候哪个分支会受到影响、这里是main主分克
     branches:
-      - main
-      
-# 推送之后执行一系列的任务
+      - main # 根据你的分支设置修改
+
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
+
     steps:
-      # 获取代码
+      # 使用action库action/checkout获取代码
       - name: 迁出代码
-        # 使用action库action/checkout获取代码
-        uses: actions/checkout@main
+        uses: actions/checkout@v4
 
-        # 安装 nodejs
-      - name: 安装 nodejs
-        uses: actions/setup-node@v2
+
+      - name: 安装 Node.js
+        uses: actions/setup-node@v4
         with:
-          node-version: "16.x"
+          node-version: 16.x
 
-      # 安装依赖
-      - name: 安装依赖
+      - name: 安装项目依赖
         run: npm install
 
-      # 构建 dist
-      - name: 构建
+      - name: 构建项目
         run: npm run build
 
-      # 上传到腾讯云
       - name: 发布到腾讯云
-        uses: easingthemes/ssh-deploy@main
         env:
-          # 私钥
-          SSH_PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
-          # SCP参数
-          ARGS: "-rlgoDzvc -i --delete"
-          # 源目录
-          SOURCE: 'dist/'
-          # 服务器ip
-          REMOTE_HOST: ${{secrets.REMOTET_XHOST}}
-          # 用户
-          REMOTE_USER: 'root'
-          # 目标地址
-          TARGET: '/data/www/resume'
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          SERVER_USER: ${{ secrets.SERVER_USERNAME }}
+          SERVER_HOST: ${{ secrets.SERVER_HOST }}
+        run: |
+          # 将私钥写入文件
+          echo "$SSH_PRIVATE_KEY" > private_key
+          chmod 600 private_key
+  
+          # 删除服务器旧文件
+          ssh -i private_key -o StrictHostKeyChecking=no $SERVER_USER@$SERVER_HOST "rm -rf /home/html/resume/*"
+  
+          # 上传新文件
+          scp -i private_key -o StrictHostKeyChecking=no -r ./dist/* $SERVER_USER@$SERVER_HOST:/home/html/resume/
+  
+          # 删除本地私钥
+          rm private_key
