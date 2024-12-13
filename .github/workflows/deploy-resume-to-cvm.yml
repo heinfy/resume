@@ -37,10 +37,10 @@ jobs:
           chmod 600 private_key
   
           # 删除服务器旧文件
-          ssh -i private_key -o StrictHostKeyChecking=no $SERVER_USER@$SERVER_HOST "rm -rf /home/html/resume/*"
+          ssh -i private_key -o StrictHostKeyChecking=no $SERVER_USER@$SERVER_HOST "rm -rf /home/docker_project/site/resume.heinfy.top/*"
   
           # 上传新文件
-          scp -i private_key -o StrictHostKeyChecking=no -r ./dist/* $SERVER_USER@$SERVER_HOST:/home/html/resume/
+          scp -i private_key -o StrictHostKeyChecking=no -r ./dist/* $SERVER_USER@$SERVER_HOST:/home/docker_project/site/resume.heinfy.top/
   
           # 删除本地私钥
           rm private_key
