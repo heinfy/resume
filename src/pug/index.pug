@@ -68,13 +68,13 @@ html(lang='zh')
                     .d-flex.flex-column.flex-md-row.justify-content-between
                         .flex-grow-1.mb-3
                             .subheading 年龄： 
-                                span.text-primary 29
+                                span.text-primary 30
                         .flex-grow-1.mb-3
                             .subheading 籍贯： 
                                 span.text-primary 河北
                         .flex-grow-1.mb-3
                             .subheading 工作年限： 
-                                span.text-primary 6年
+                                span.text-primary 8年
 
                     .d-flex.flex-column.flex-md-row.justify-content-between
                         .flex-grow-1.mb-3
@@ -91,13 +91,13 @@ html(lang='zh')
                         span.subheading 我的主页：
                         a.social-icon(href='https://heinfy.top/')(title='https://heinfy.top/')(target="stumbleupon")
                             i.fab.fa-internet-explorer
-                        span.subheading 博客：
+                        span.subheading 技术博客：
                         a.social-icon(href='https://blog.heinfy.top/')(title='https://blog.heinfy.top/')(target="microblog")
                             i.fab.fa-microblog
                         span.subheading GitHub：
                         a.social-icon(href='https://github.com/heinfy')(title='https://github.com/heinfy')(target="github")
                             i.fab.fa-github
-                        span.subheading 我的简历：
+                        span.subheading 简历.pdf：
                         a.social-icon(href='https://www.qmjianli.com/cvs/22384M52GIF5P56')(title='我的简历')(target="download")
                             i.fab.fa-markdown
                             //- i.fab.fa-octopus-deploy
@@ -107,7 +107,7 @@ html(lang='zh')
                             //- i.fab.fa-face-smile-beam
                     hr
                     p.lead.pt-5
-                        span.text-primary.subheading 😊 Welcome to my resume page
+                        span.text-primary.subheading 😊 欢迎查看我的简历，如果合适请联系我
             hr.m-0
 
 
@@ -115,26 +115,7 @@ html(lang='zh')
             section#skills.resume-section
                 .resume-section-content
                     h2.mb-5 职业技能
-                    .subheading.mb-3 编程语言 & 工具
-                    ul.list-inline.dev-icons
-                        li.list-inline-item(title="html5")
-                            i.fab.fa-html5
-                        li.list-inline-item(title="css3")
-                            i.fab.fa-css3-alt
-                        li.list-inline-item(title="javascript")
-                            i.fab.fa-js-square
-                        li.list-inline-item(title="typescript")
-                            img.svg-inline--fa(src="assets/typescript.svg" width="42" height="48" alt="typescript")
-                        li.list-inline-item(title="react")
-                            i.fab.fa-react
-                        li.list-inline-item(title="vuejs")
-                            i.fab.fa-vuejs
-                        li.list-inline-item(title="node-js")
-                            i.fab.fa-node-js
-                        li.list-inline-item(title="liunx")
-                            i.fab.fa-linux.fa-brands
-                        li.list-inline-item(title="docker")
-                            i.fab.fa-docker
+
                     .subheading.mb-3 工作能力
                     ul.fa-ul.mb-0
                         li.mb-1
@@ -169,14 +150,35 @@ html(lang='zh')
                             span.fa-li
                                 i.fas.fa-check
                             | 熟悉移动应用与 H5 页面交互，具备使用 WebView 或 桥接技术进行原生和Web结合的经验，确保原生与 H5 页面的良好协同；
+                        //- li.mb-1
+                        //-     span.fa-li
+                        //-         i.fas.fa-check
+                        //-     | 熟悉微信小程序的开发，熟悉小程序的架构、生命周期、组件化开发及其 API，能够高效开发小程序的界面；
                         li.mb-1
                             span.fa-li
                                 i.fas.fa-check
-                            | 熟悉微信小程序的开发，熟悉小程序的架构、生命周期、组件化开发及其 API，能够高效开发小程序的界面；
-                        li.mb-1
-                            span.fa-li
-                                i.fas.fa-check
-                            | 了解 HarmonyOS 和 NodeJS 服务端生态，能够基于框架快速实现应用；
+                            | 熟悉微信小程序、HarmonyOS 和 NodeJS 服务端生态，能够基于框架快速实现应用；
+                    hr.m-20
+                    .subheading.mb-3 常用语言 & 工具
+                    ul.list-inline.dev-icons
+                        li.list-inline-item(title="html5")
+                            i.fab.fa-html5
+                        li.list-inline-item(title="css3")
+                            i.fab.fa-css3-alt
+                        li.list-inline-item(title="javascript")
+                            i.fab.fa-js-square
+                        li.list-inline-item(title="typescript")
+                            img.svg-inline--fa(src="assets/typescript.svg" width="42" height="48" alt="typescript")
+                        li.list-inline-item(title="react")
+                            i.fab.fa-react
+                        li.list-inline-item(title="vuejs")
+                            i.fab.fa-vuejs
+                        li.list-inline-item(title="node-js")
+                            i.fab.fa-node-js
+                        li.list-inline-item(title="liunx")
+                            i.fab.fa-linux.fa-brands
+                        li.list-inline-item(title="docker")
+                            i.fab.fa-docker
             hr.m-0
 
             // 工作经历
@@ -195,7 +197,7 @@ html(lang='zh')
                             p
                                 | 3、参与前端项目 Sentry 监控、国际化、Excel 已经 Echart 数据可视化等前端开发任务。
                         .flex-shrink-0
-                            span.text-primary 2024.08 - 2025.03
+                            span.text-primary 2024.08 - 至今
 
                     .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
                         .flex-grow-1
@@ -250,14 +252,14 @@ html(lang='zh')
                         .flex-grow-1
                             h3.mb-0  ASK 容器服务平台
                             .subheading.text-lowercase.mb-2 技术栈：nextjs、docker
-                            div.mb-2 项目描述：该项目为 ASK 集群中的资源、任务等内容提供前端可视化界面。该平台提供了包括任务列表、虚拟机、数据集、docker 镜像等创建编辑工作。
+                            div.mb-2 项目描述：该项目为 ASK 集群中的资源、任务等内容提供前端可视化界面。该平台提供了包括任务列表、虚拟机、数据集、docker 镜像等内容的 CRUD 工作。
                             div.mb-1 我的工作：
                             p.mb-1.px-3 1、配置 CI/CD 自动化部署流水线，基于 docker 镜像实现代码从提交到上线全流程自动化；
                             p.mb-1.px-3 2、为平台实现了基于权限的路由控制，并为全站添加国际化；
                             p.mb-1.px-3 3、采用 Echart 开发 Dashboard 界面，展示柱状图、饼图等图表；
                             p.mb-1.px-3 3、优化开发体验，集成 ESLint/Prettier，实现代码规范化和质量保证。
                         .flex-shrink-0
-                            span.text-primary 2024.08 - 2025.03
+                            span.text-primary 2024.08 - 至今
                     
                     //- 完美世界
                     .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
